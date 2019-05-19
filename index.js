@@ -17,6 +17,9 @@ app.listen(process.env.PORT || puerto, () => {
 });
 
 app.get('/', async (req, res) => {
+    if(req.query.idUrl){
+      return res.send({ok: true})
+    }
     const idUrl = req.query.idUrl;
     const url = `https://datosoficiales.com/resultados/${idUrl}/GOB.json`;
     const options = {
