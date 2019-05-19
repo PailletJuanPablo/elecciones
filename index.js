@@ -17,7 +17,7 @@ app.listen(process.env.PORT || puerto, () => {
 });
 
 app.get('/', async (req, res) => {
-    if(req.query.idUrl){
+    if(!req.query.idUrl){
       return res.send({ok: true})
     }
     const idUrl = req.query.idUrl;
