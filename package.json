@@ -2,7 +2,7 @@
   "name": "datosofi",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "elecciones_server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
